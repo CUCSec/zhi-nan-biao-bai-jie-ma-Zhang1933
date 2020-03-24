@@ -13,3 +13,13 @@ for char in confession:
     message += hex_string[2:]
 
 print(message)
+
+i=0
+ans=""
+s=''
+while i < len(message):
+    s=message[i:i+2]
+    a=int(s,16)
+    ans+=chr(a)
+    i=i+2
+print(ans)
